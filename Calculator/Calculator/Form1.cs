@@ -22,6 +22,31 @@ namespace Calculator
 
         }
 
+        private void Calculate_click(object sender, EventArgs e)
+        {
+            double firstArgument = Convert.ToDouble(textBox1.Text);
+            double secondArgument = Convert.ToDouble(textBox2.Text);
+            double result;
+            switch(((Button)sender).Name)
+            {
+                case "add":
+                    result = firstArgument + secondArgument;
+                    break;
+                case "subtraction":
+                    result = firstArgument - secondArgument;
+                    break;
+                case "multiplication":
+                    result = firstArgument * secondArgument;
+                    break;
+                case "division":
+                    result = firstArgument / secondArgument;
+                    break;
+                default: throw new Exception(message: "Ошибка");
+
+            }
+            textBox3.Text = result.ToString();
+        }
+
         private void Button1_Click(object sender, EventArgs e)
         {
             double firstArgument = Convert.ToDouble(textBox1.Text);
@@ -52,26 +77,17 @@ namespace Calculator
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(textBox1.Text);
-            double secondArgument = Convert.ToDouble(textBox2.Text);
-            double result = firstArgument - secondArgument;
-            textBox3.Text = result.ToString();
+
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(textBox1.Text);
-            double secondArgument = Convert.ToDouble(textBox2.Text);
-            double result = firstArgument * secondArgument;
-            textBox3.Text = result.ToString();
+
         }
 
         private void Button4_Click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(textBox1.Text);
-            double secondArgument = Convert.ToDouble(textBox2.Text);
-            double result = firstArgument / secondArgument;
-            textBox3.Text = result.ToString();
+
         }
     }
 }
