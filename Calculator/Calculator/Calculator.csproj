@@ -56,11 +56,14 @@
     <Compile Include="OneArgumentCalculators\ArccosCalculator.cs" />
     <Compile Include="OneArgumentCalculators\ArcsinCalculator.cs" />
     <Compile Include="OneArgumentCalculators\ModuleXCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\NegativXCalculator.cs" />
     <Compile Include="OneArgumentCalculators\Pow10xCalculator.cs" />
     <Compile Include="OneArgumentCalculators\Pow2xCalculator.cs" />
     <Compile Include="OneArgumentCalculators\TanCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\AddCalculator.cs" />
     <Compile Include="OneArgumentCalculators\CosCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\AverageArifmetikCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\AverageGeometrikCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\DivisionCalculator.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -69,7 +72,10 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="OneArgumentCalculators\IOneArgumentCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\IntegerCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\ITwoArgumentsCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\MaxCalculator.cs" />
+    <Compile Include="TwoArgumentsCalculators\MinCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\MultiplicationCalculator.cs" />
     <Compile Include="OneArgumentCalculators\OneArgumentFactory.cs" />
     <Compile Include="Program.cs" />

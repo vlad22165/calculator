@@ -16,6 +16,16 @@ namespace Calculator.TwoArgumentsCalculators
                     return new MultiplicationCalculator();
                 case "division":
                     return new DivisionCalculator();
+                case "min":
+                    return new MinCalculator();
+                case "max":
+                    return new MaxCalculator();
+                case "arifm":
+                    return new AverageArifmetikCalculator();
+                case "geom":
+                    return new AverageGeometrikCalculator();
+                case "integer":
+                    return new IntegerCalculator();
                 default: throw new Exception(message: "Ошибка");
 
             }

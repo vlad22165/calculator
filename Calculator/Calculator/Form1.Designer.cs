@@ -55,11 +55,11 @@
             this.pow10x = new System.Windows.Forms.Button();
             this.div1x = new System.Windows.Forms.Button();
             this.Abs = new System.Windows.Forms.Button();
-            this.sindegree = new System.Windows.Forms.Button();
-            this.cosdegree = new System.Windows.Forms.Button();
-            this.arccosdegree = new System.Windows.Forms.Button();
-            this.arcsindegree = new System.Windows.Forms.Button();
-            this.integerdivtoy = new System.Windows.Forms.Button();
+            this.min = new System.Windows.Forms.Button();
+            this.max = new System.Windows.Forms.Button();
+            this.averagearifm = new System.Windows.Forms.Button();
+            this.averagegeom = new System.Windows.Forms.Button();
+            this.integer = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // add
@@ -324,66 +324,66 @@
             this.Abs.UseVisualStyleBackColor = true;
             this.Abs.Click += new System.EventHandler(this.OneArgumentCalculate_click);
             // 
-            // sindegree
+            // min
             // 
-            this.sindegree.Location = new System.Drawing.Point(813, 282);
-            this.sindegree.Name = "sindegree";
-            this.sindegree.Size = new System.Drawing.Size(75, 23);
-            this.sindegree.TabIndex = 41;
-            this.sindegree.Text = "SinDegree";
-            this.sindegree.UseVisualStyleBackColor = true;
-            this.sindegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            this.min.Location = new System.Drawing.Point(813, 282);
+            this.min.Name = "min";
+            this.min.Size = new System.Drawing.Size(75, 23);
+            this.min.TabIndex = 41;
+            this.min.Text = "Min";
+            this.min.UseVisualStyleBackColor = true;
+            this.min.Click += new System.EventHandler(this.Calculate_click);
             // 
-            // cosdegree
+            // max
             // 
-            this.cosdegree.Location = new System.Drawing.Point(927, 282);
-            this.cosdegree.Name = "cosdegree";
-            this.cosdegree.Size = new System.Drawing.Size(75, 23);
-            this.cosdegree.TabIndex = 43;
-            this.cosdegree.Text = "CosDegree";
-            this.cosdegree.UseVisualStyleBackColor = true;
-            this.cosdegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            this.max.Location = new System.Drawing.Point(927, 282);
+            this.max.Name = "max";
+            this.max.Size = new System.Drawing.Size(75, 23);
+            this.max.TabIndex = 43;
+            this.max.Text = "Max";
+            this.max.UseVisualStyleBackColor = true;
+            this.max.Click += new System.EventHandler(this.Calculate_click);
             // 
-            // arccosdegree
+            // averagearifm
             // 
-            this.arccosdegree.Location = new System.Drawing.Point(1062, 282);
-            this.arccosdegree.Name = "arccosdegree";
-            this.arccosdegree.Size = new System.Drawing.Size(75, 23);
-            this.arccosdegree.TabIndex = 45;
-            this.arccosdegree.Text = "ArccosDegree";
-            this.arccosdegree.UseVisualStyleBackColor = true;
-            this.arccosdegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            this.averagearifm.Location = new System.Drawing.Point(1062, 282);
+            this.averagearifm.Name = "averagearifm";
+            this.averagearifm.Size = new System.Drawing.Size(75, 23);
+            this.averagearifm.TabIndex = 45;
+            this.averagearifm.Text = "averagearifm";
+            this.averagearifm.UseVisualStyleBackColor = true;
+            this.averagearifm.Click += new System.EventHandler(this.Calculate_click);
             // 
-            // arcsindegree
+            // averagegeom
             // 
-            this.arcsindegree.Location = new System.Drawing.Point(541, 362);
-            this.arcsindegree.Name = "arcsindegree";
-            this.arcsindegree.Size = new System.Drawing.Size(75, 23);
-            this.arcsindegree.TabIndex = 47;
-            this.arcsindegree.Text = "ArcsinDegree";
-            this.arcsindegree.UseVisualStyleBackColor = true;
-            this.arcsindegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            this.averagegeom.Location = new System.Drawing.Point(541, 362);
+            this.averagegeom.Name = "averagegeom";
+            this.averagegeom.Size = new System.Drawing.Size(75, 23);
+            this.averagegeom.TabIndex = 47;
+            this.averagegeom.Text = "averagegeom";
+            this.averagegeom.UseVisualStyleBackColor = true;
+            this.averagegeom.Click += new System.EventHandler(this.Calculate_click);
             // 
-            // integerdivtoy
+            // integer
             // 
-            this.integerdivtoy.Location = new System.Drawing.Point(685, 362);
-            this.integerdivtoy.Name = "integerdivtoy";
-            this.integerdivtoy.Size = new System.Drawing.Size(75, 23);
-            this.integerdivtoy.TabIndex = 49;
-            this.integerdivtoy.Text = "деление на y";
-            this.integerdivtoy.UseVisualStyleBackColor = true;
-            this.integerdivtoy.Click += new System.EventHandler(this.Calculate_click);
+            this.integer.Location = new System.Drawing.Point(685, 362);
+            this.integer.Name = "integer";
+            this.integer.Size = new System.Drawing.Size(75, 23);
+            this.integer.TabIndex = 49;
+            this.integer.Text = "деление на y";
+            this.integer.UseVisualStyleBackColor = true;
+            this.integer.Click += new System.EventHandler(this.Calculate_click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 595);
-            this.Controls.Add(this.integerdivtoy);
-            this.Controls.Add(this.arcsindegree);
-            this.Controls.Add(this.arccosdegree);
-            this.Controls.Add(this.cosdegree);
-            this.Controls.Add(this.sindegree);
+            this.Controls.Add(this.integer);
+            this.Controls.Add(this.averagegeom);
+            this.Controls.Add(this.averagearifm);
+            this.Controls.Add(this.max);
+            this.Controls.Add(this.min);
             this.Controls.Add(this.Abs);
             this.Controls.Add(this.div1x);
             this.Controls.Add(this.pow10x);
@@ -448,11 +448,11 @@
         private System.Windows.Forms.Button pow10x;
         private System.Windows.Forms.Button div1x;
         private System.Windows.Forms.Button Abs;
-        private System.Windows.Forms.Button sindegree;
-        private System.Windows.Forms.Button cosdegree;
-        private System.Windows.Forms.Button arccosdegree;
-        private System.Windows.Forms.Button arcsindegree;
-        private System.Windows.Forms.Button integerdivtoy;
+        private System.Windows.Forms.Button min;
+        private System.Windows.Forms.Button max;
+        private System.Windows.Forms.Button averagearifm;
+        private System.Windows.Forms.Button averagegeom;
+        private System.Windows.Forms.Button integer;
     }
 }
 

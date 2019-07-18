@@ -2,7 +2,7 @@
 
 namespace Calculator.OneArgumentCalculators
 {
-    public class Pow2xCalculator
+    public class Pow2xCalculator : IOneArgumentCalculator
     {
         public double Calculate(double first)
         {

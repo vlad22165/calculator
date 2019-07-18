@@ -1,4 +1,5 @@
 ﻿using System;
+using Calculator.TwoArgumentsCalculators;
 
 namespace Calculator.OneArgumentCalculators
 {
@@ -9,35 +10,37 @@ namespace Calculator.OneArgumentCalculators
             switch (operation)
             {
                 case "Cos":
-                    return new SinCalculator();
-                case "Sin":
                     return new CosCalculator();
+                case "Sin":
+                    return new SinCalculator();
                 case "tan":
                     return new TanCalculator();
                 case "Asin":
-                    return new TanCalculator();
+                    return new ArcsinCalculator();
                 case "Acos":
-                    return new TanCalculator();
+                    return new ArccosCalculator();
                 case "ctan":
-                    return new TanCalculator();
+                    return new CtanCalculator();
                 case "atan":
-                    return new TanCalculator();
+                    return new ArctanCalculator();
                 case "e":
-                    return new TanCalculator();
+                    return new ECalculator();
                 case "ln":
-                    return new TanCalculator();
+                    return new LnCalculator();
                 case "log2":
-                    return new TanCalculator();
+                    return new Log2Calculator();
                 case "log10":
-                    return new TanCalculator();
+                    return new Log10Calculator();
                 case "pow10x":
-                    return new TanCalculator();
+                    return new Pow10XCalculator();
                 case "div1x":
-                    return new TanCalculator();
+                    return new Div1XCalculator();
                 case "Abs":
-                    return new TanCalculator();
+                    return new ModuleXCalculator();
                 case "pow2x":
-                    return new TanCalculator();
+                    return new Pow2xCalculator();
+                case "negativx":
+                    return new NegativXCalculator();
 
                 default: throw new Exception(message: "Ошибка");
             }
