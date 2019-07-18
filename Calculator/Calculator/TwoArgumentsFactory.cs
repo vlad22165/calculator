@@ -12,13 +12,10 @@ namespace Calculator
                     return new AddCalculator();
                 case "subtraction":
                     return new SubtractionCalculator();
-                    break;
                 case "multiplication":
                     return new MultiplicationCalculator();
-                    break;
                 case "division":
                     return new DivisionCalculator();
-                    break;
                 default: throw new Exception(message: "Ошибка");
 
             }

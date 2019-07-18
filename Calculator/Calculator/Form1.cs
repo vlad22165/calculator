@@ -26,18 +26,18 @@ namespace Calculator
         {
             double firstArgument = Convert.ToDouble(textBox1.Text);
             double secondArgument = Convert.ToDouble(textBox2.Text);
-            double result;
 
             ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
-            result = calculator.Calculate(firstArgument, secondArgument);
+            var result = calculator.Calculate(firstArgument, secondArgument);
             textBox3.Text = result.ToString();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void OneArgumentCalculate_click(object sender, EventArgs e)
         {
             double firstArgument = Convert.ToDouble(textBox1.Text);
-            double secondArgument = Convert.ToDouble(textBox2.Text);
-            double result = firstArgument + secondArgument;
+
+            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
+            var result = calculator.Calculate(firstArgument);
             textBox3.Text = result.ToString();
         }
 
@@ -57,21 +57,6 @@ namespace Calculator
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button4_Click(object sender, EventArgs e)
         {
 
         }
