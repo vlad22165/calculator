@@ -40,6 +40,26 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Sin = new System.Windows.Forms.Button();
             this.Cos = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.Asin = new System.Windows.Forms.Button();
+            this.Acos = new System.Windows.Forms.Button();
+            this.ctan = new System.Windows.Forms.Button();
+            this.atan = new System.Windows.Forms.Button();
+            this.e = new System.Windows.Forms.Button();
+            this.ln = new System.Windows.Forms.Button();
+            this.log2 = new System.Windows.Forms.Button();
+            this.log10 = new System.Windows.Forms.Button();
+            this.x2 = new System.Windows.Forms.Button();
+            this.pow2x = new System.Windows.Forms.Button();
+            this.negativx = new System.Windows.Forms.Button();
+            this.pow10x = new System.Windows.Forms.Button();
+            this.div1x = new System.Windows.Forms.Button();
+            this.Abs = new System.Windows.Forms.Button();
+            this.sindegree = new System.Windows.Forms.Button();
+            this.cosdegree = new System.Windows.Forms.Button();
+            this.arccosdegree = new System.Windows.Forms.Button();
+            this.arcsindegree = new System.Windows.Forms.Button();
+            this.integerdivtoy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // add
@@ -154,11 +174,231 @@
             this.Cos.UseVisualStyleBackColor = true;
             this.Cos.Click += new System.EventHandler(this.OneArgumentCalculate_click);
             // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(420, 143);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(75, 23);
+            this.tan.TabIndex = 13;
+            this.tan.Text = "tan";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // Asin
+            // 
+            this.Asin.Location = new System.Drawing.Point(550, 143);
+            this.Asin.Name = "Asin";
+            this.Asin.Size = new System.Drawing.Size(75, 23);
+            this.Asin.TabIndex = 14;
+            this.Asin.Text = "arcsin";
+            this.Asin.UseVisualStyleBackColor = true;
+            this.Asin.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // Acos
+            // 
+            this.Acos.Location = new System.Drawing.Point(420, 193);
+            this.Acos.Name = "Acos";
+            this.Acos.Size = new System.Drawing.Size(75, 23);
+            this.Acos.TabIndex = 15;
+            this.Acos.Text = "arccos";
+            this.Acos.UseVisualStyleBackColor = true;
+            this.Acos.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // ctan
+            // 
+            this.ctan.Location = new System.Drawing.Point(550, 193);
+            this.ctan.Name = "ctan";
+            this.ctan.Size = new System.Drawing.Size(75, 23);
+            this.ctan.TabIndex = 17;
+            this.ctan.Text = "ctan";
+            this.ctan.UseVisualStyleBackColor = true;
+            this.ctan.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // atan
+            // 
+            this.atan.Location = new System.Drawing.Point(685, 143);
+            this.atan.Name = "atan";
+            this.atan.Size = new System.Drawing.Size(75, 23);
+            this.atan.TabIndex = 19;
+            this.atan.Text = "arctan";
+            this.atan.UseVisualStyleBackColor = true;
+            this.atan.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // e
+            // 
+            this.e.Location = new System.Drawing.Point(685, 193);
+            this.e.Name = "e";
+            this.e.Size = new System.Drawing.Size(75, 23);
+            this.e.TabIndex = 21;
+            this.e.Text = "e^x";
+            this.e.UseVisualStyleBackColor = true;
+            this.e.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // ln
+            // 
+            this.ln.Location = new System.Drawing.Point(813, 143);
+            this.ln.Name = "ln";
+            this.ln.Size = new System.Drawing.Size(75, 23);
+            this.ln.TabIndex = 23;
+            this.ln.Text = "ln";
+            this.ln.UseVisualStyleBackColor = true;
+            this.ln.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // log2
+            // 
+            this.log2.Location = new System.Drawing.Point(813, 193);
+            this.log2.Name = "log2";
+            this.log2.Size = new System.Drawing.Size(75, 23);
+            this.log2.TabIndex = 25;
+            this.log2.Text = "log2";
+            this.log2.UseVisualStyleBackColor = true;
+            this.log2.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // log10
+            // 
+            this.log10.Location = new System.Drawing.Point(927, 143);
+            this.log10.Name = "log10";
+            this.log10.Size = new System.Drawing.Size(75, 23);
+            this.log10.TabIndex = 27;
+            this.log10.Text = "log10";
+            this.log10.UseVisualStyleBackColor = true;
+            this.log10.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // x2
+            // 
+            this.x2.Location = new System.Drawing.Point(927, 193);
+            this.x2.Name = "x2";
+            this.x2.Size = new System.Drawing.Size(75, 23);
+            this.x2.TabIndex = 29;
+            this.x2.Text = "x^2";
+            this.x2.UseVisualStyleBackColor = true;
+            this.x2.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // pow2x
+            // 
+            this.pow2x.Location = new System.Drawing.Point(1062, 143);
+            this.pow2x.Name = "pow2x";
+            this.pow2x.Size = new System.Drawing.Size(75, 23);
+            this.pow2x.TabIndex = 31;
+            this.pow2x.Text = "2^x";
+            this.pow2x.UseVisualStyleBackColor = true;
+            this.pow2x.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // negativx
+            // 
+            this.negativx.Location = new System.Drawing.Point(1062, 193);
+            this.negativx.Name = "negativx";
+            this.negativx.Size = new System.Drawing.Size(75, 23);
+            this.negativx.TabIndex = 33;
+            this.negativx.Text = "–x";
+            this.negativx.UseVisualStyleBackColor = true;
+            this.negativx.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // pow10x
+            // 
+            this.pow10x.Location = new System.Drawing.Point(411, 282);
+            this.pow10x.Name = "pow10x";
+            this.pow10x.Size = new System.Drawing.Size(75, 23);
+            this.pow10x.TabIndex = 35;
+            this.pow10x.Text = "10^x";
+            this.pow10x.UseVisualStyleBackColor = true;
+            this.pow10x.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // div1x
+            // 
+            this.div1x.Location = new System.Drawing.Point(541, 282);
+            this.div1x.Name = "div1x";
+            this.div1x.Size = new System.Drawing.Size(75, 23);
+            this.div1x.TabIndex = 37;
+            this.div1x.Text = "1/x";
+            this.div1x.UseVisualStyleBackColor = true;
+            this.div1x.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // Abs
+            // 
+            this.Abs.Location = new System.Drawing.Point(685, 282);
+            this.Abs.Name = "Abs";
+            this.Abs.Size = new System.Drawing.Size(75, 23);
+            this.Abs.TabIndex = 39;
+            this.Abs.Text = "|x|";
+            this.Abs.UseVisualStyleBackColor = true;
+            this.Abs.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // sindegree
+            // 
+            this.sindegree.Location = new System.Drawing.Point(813, 282);
+            this.sindegree.Name = "sindegree";
+            this.sindegree.Size = new System.Drawing.Size(75, 23);
+            this.sindegree.TabIndex = 41;
+            this.sindegree.Text = "SinDegree";
+            this.sindegree.UseVisualStyleBackColor = true;
+            this.sindegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // cosdegree
+            // 
+            this.cosdegree.Location = new System.Drawing.Point(927, 282);
+            this.cosdegree.Name = "cosdegree";
+            this.cosdegree.Size = new System.Drawing.Size(75, 23);
+            this.cosdegree.TabIndex = 43;
+            this.cosdegree.Text = "CosDegree";
+            this.cosdegree.UseVisualStyleBackColor = true;
+            this.cosdegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // arccosdegree
+            // 
+            this.arccosdegree.Location = new System.Drawing.Point(1062, 282);
+            this.arccosdegree.Name = "arccosdegree";
+            this.arccosdegree.Size = new System.Drawing.Size(75, 23);
+            this.arccosdegree.TabIndex = 45;
+            this.arccosdegree.Text = "ArccosDegree";
+            this.arccosdegree.UseVisualStyleBackColor = true;
+            this.arccosdegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // arcsindegree
+            // 
+            this.arcsindegree.Location = new System.Drawing.Point(541, 362);
+            this.arcsindegree.Name = "arcsindegree";
+            this.arcsindegree.Size = new System.Drawing.Size(75, 23);
+            this.arcsindegree.TabIndex = 47;
+            this.arcsindegree.Text = "ArcsinDegree";
+            this.arcsindegree.UseVisualStyleBackColor = true;
+            this.arcsindegree.Click += new System.EventHandler(this.OneArgumentCalculate_click);
+            // 
+            // integerdivtoy
+            // 
+            this.integerdivtoy.Location = new System.Drawing.Point(685, 362);
+            this.integerdivtoy.Name = "integerdivtoy";
+            this.integerdivtoy.Size = new System.Drawing.Size(75, 23);
+            this.integerdivtoy.TabIndex = 49;
+            this.integerdivtoy.Text = "деление на y";
+            this.integerdivtoy.UseVisualStyleBackColor = true;
+            this.integerdivtoy.Click += new System.EventHandler(this.Calculate_click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1188, 595);
+            this.Controls.Add(this.integerdivtoy);
+            this.Controls.Add(this.arcsindegree);
+            this.Controls.Add(this.arccosdegree);
+            this.Controls.Add(this.cosdegree);
+            this.Controls.Add(this.sindegree);
+            this.Controls.Add(this.Abs);
+            this.Controls.Add(this.div1x);
+            this.Controls.Add(this.pow10x);
+            this.Controls.Add(this.negativx);
+            this.Controls.Add(this.pow2x);
+            this.Controls.Add(this.x2);
+            this.Controls.Add(this.log10);
+            this.Controls.Add(this.log2);
+            this.Controls.Add(this.ln);
+            this.Controls.Add(this.e);
+            this.Controls.Add(this.atan);
+            this.Controls.Add(this.ctan);
+            this.Controls.Add(this.Acos);
+            this.Controls.Add(this.Asin);
+            this.Controls.Add(this.tan);
             this.Controls.Add(this.Cos);
             this.Controls.Add(this.Sin);
             this.Controls.Add(this.label4);
@@ -193,6 +433,26 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Sin;
         private System.Windows.Forms.Button Cos;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button Asin;
+        private System.Windows.Forms.Button Acos;
+        private System.Windows.Forms.Button ctan;
+        private System.Windows.Forms.Button atan;
+        private System.Windows.Forms.Button e;
+        private System.Windows.Forms.Button ln;
+        private System.Windows.Forms.Button log2;
+        private System.Windows.Forms.Button log10;
+        private System.Windows.Forms.Button x2;
+        private System.Windows.Forms.Button pow2x;
+        private System.Windows.Forms.Button negativx;
+        private System.Windows.Forms.Button pow10x;
+        private System.Windows.Forms.Button div1x;
+        private System.Windows.Forms.Button Abs;
+        private System.Windows.Forms.Button sindegree;
+        private System.Windows.Forms.Button cosdegree;
+        private System.Windows.Forms.Button arccosdegree;
+        private System.Windows.Forms.Button arcsindegree;
+        private System.Windows.Forms.Button integerdivtoy;
     }
 }
 

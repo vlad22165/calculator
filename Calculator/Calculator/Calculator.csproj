@@ -46,6 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OneArgumentCalculators\ECalculator.cs" />
+    <Compile Include="OneArgumentCalculators\Div1xCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\LnCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\Log10Calculator.cs" />
+    <Compile Include="OneArgumentCalculators\Log2Calculator.cs" />
+    <Compile Include="OneArgumentCalculators\ArctanCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\CtanCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\ArccosCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\ArcsinCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\ModuleXCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\Pow10xCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\Pow2xCalculator.cs" />
+    <Compile Include="OneArgumentCalculators\TanCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\AddCalculator.cs" />
     <Compile Include="OneArgumentCalculators\CosCalculator.cs" />
     <Compile Include="TwoArgumentsCalculators\DivisionCalculator.cs" />
