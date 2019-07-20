@@ -20,9 +20,9 @@ namespace Calculator.TwoArgumentsCalculators
                     return new MinCalculator();
                 case "max":
                     return new MaxCalculator();
-                case "arifm":
+                case "averagearifm":
                     return new AverageArifmetikCalculator();
-                case "geom":
+                case "averagegeom":
                     return new AverageGeometrikCalculator();
                 case "integer":
                     return new IntegerCalculator();

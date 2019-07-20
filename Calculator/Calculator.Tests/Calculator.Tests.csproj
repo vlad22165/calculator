@@ -49,13 +49,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="OneArgumentCalculators\ArccosCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\ArcsinCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\ArctanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\AverageArifmetikCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\CosCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\CtanCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\Div1xCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\ECalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\LnCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\Log10CalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\Log2CalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\MaxCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\ModuleXCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\NegativXCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\OneArgumentFactoryTests.cs" />
+    <Compile Include="OneArgumentCalculators\Pow10xCalculatorTests.cs" />
+    <Compile Include="OneArgumentCalculators\Pow2xCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\SinCalculatorTest.cs" />
+    <Compile Include="OneArgumentCalculators\TanCalculatorTest.cs" />
+    <Compile Include="OneArgumentCalculators\TanCalculatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TwoArgumentsCalculators\AddCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculators\AverageArifmetikCalculatorTest.cs" />
+    <Compile Include="TwoArgumentsCalculators\AverageGeometrikCalculatorTest.cs" />
+    <Compile Include="TwoArgumentsCalculators\AverageGeometrikCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculators\DivisionCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculators\IntegerCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculators\MultiplicationCalculatorTests.cs" />
     <Compile Include="TwoArgumentsCalculators\SubtractionCalculatorTests.cs" />
+    <Compile Include="TwoArgumentsCalculators\TwoArgumentsFactoryTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Calculator\Calculator.csproj">

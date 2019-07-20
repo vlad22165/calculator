@@ -378,7 +378,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1188, 595);
+            this.ClientSize = new System.Drawing.Size(1159, 511);
             this.Controls.Add(this.integer);
             this.Controls.Add(this.averagegeom);
             this.Controls.Add(this.averagearifm);
