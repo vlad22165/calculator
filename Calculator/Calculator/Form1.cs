@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -26,21 +27,35 @@ namespace Calculator
 
         private void Calculate_click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(textBox1.Text);
-            double secondArgument = Convert.ToDouble(textBox2.Text);
+            try
+            {
+                double firstArgument = Convert.ToDouble(textBox1.Text);
+                double secondArgument = Convert.ToDouble(textBox2.Text);
 
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
-            var result = calculator.Calculate(firstArgument, secondArgument);
-            textBox3.Text = result.ToString();
+                ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(((Button) sender).Name);
+                var result = calculator.Calculate(firstArgument, secondArgument);
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                textBox3.Text = exc.Message;
+            }
         }
 
         private void OneArgumentCalculate_click(object sender, EventArgs e)
         {
-            double firstArgument = Convert.ToDouble(textBox1.Text);
+            try
+            {
+                double firstArgument = Convert.ToDouble(textBox1.Text);
 
-            IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button)sender).Name);
-            var result = calculator.Calculate(firstArgument);
-            textBox3.Text = result.ToString();
+                IOneArgumentCalculator calculator = OneArgumentFactory.CreateCalculator(((Button) sender).Name);
+                var result = calculator.Calculate(firstArgument);
+                textBox3.Text = result.ToString();
+            }
+            catch (Exception exc)
+            {
+                textBox3.Text = exc.Message;
+            }
         }
 
         private void Label2_Click(object sender, EventArgs e)

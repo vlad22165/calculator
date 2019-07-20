@@ -1,4 +1,5 @@
-﻿using Calculator.OneArgumentCalculators;
+﻿using System;
+using Calculator.OneArgumentCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -19,7 +20,17 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         }
 
-        // ...
+        [Test]
+
+        public void Div1xTest()
+        {
+            IOneArgumentCalculator Calculator = new Div1XCalculator();
+
+            Assert.Throws<Exception>(() =>
+                Calculator.Calculate(0));
+
+
+        }
 
 
     }

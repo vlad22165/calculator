@@ -1,4 +1,6 @@
-﻿using Calculator.OneArgumentCalculators;
+﻿using System;
+using Calculator.OneArgumentCalculators;
+using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -19,7 +21,17 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         }
 
-        // ...
+        [Test]
+
+        public void ArccosTest()
+        {
+            IOneArgumentCalculator Calculator = new ArccosCalculator();
+
+            Assert.Throws<Exception>(() =>
+                Calculator.Calculate(2));
+
+
+        }
 
 
     }

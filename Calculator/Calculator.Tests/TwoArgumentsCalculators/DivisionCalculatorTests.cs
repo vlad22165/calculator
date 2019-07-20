@@ -1,4 +1,5 @@
-﻿using Calculator.TwoArgumentsCalculators;
+﻿using System;
+using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArgumentsCalculators
@@ -19,8 +20,22 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
         }
 
-        // ...
+        [Test]
+
+        public void DivisionByZeroTest()
+
+        {
+
+            ITwoArgumentsCalculator Calculator = new DivisionCalculator();
+            double result = Calculator.Calculate(1, 2);
+
+            Assert.Throws<Exception>(() =>
+                Calculator.Calculate(1, 0));
+
+
+        }
 
 
     }
+
 }

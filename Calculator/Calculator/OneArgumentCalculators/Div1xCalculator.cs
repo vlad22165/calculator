@@ -6,6 +6,10 @@ namespace Calculator.OneArgumentCalculators
     {
         public double Calculate(double first)
         {
+            if (first == 0)
+            {
+                throw new Exception("Нельзя делить на ноль");
+            }
             return 1/(first);
         }
     }
