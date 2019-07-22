@@ -1,5 +1,4 @@
 ﻿using Calculator.OneArgumentCalculators;
-using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -13,8 +12,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            IOneArgumentCalculator Calculator = new SinCalculator();
-            double result = Calculator.Calculate(1);
+            IOneArgumentCalculator calculator = new SinCalculator();
+            double result = calculator.Calculate(1);
 
             Assert.AreEqual(0.8414, result, 0.0001);
 

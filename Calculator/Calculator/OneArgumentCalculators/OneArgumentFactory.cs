@@ -1,16 +1,15 @@
 ﻿using System;
-using Calculator.TwoArgumentsCalculators;
 
 namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// One argument Factory
-    /// </summary>
-    /// <returns></returns>
     public static class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string operation)
         {
+            /// <summary>
+            /// One argument Factory
+            /// </summary>
+            /// <returns></returns>
             switch (operation)
             {
                 case "Cos":
@@ -42,7 +41,7 @@ namespace Calculator.OneArgumentCalculators
                 case "Abs":
                     return new ModuleXCalculator();
                 case "pow2x":
-                    return new Pow2xCalculator();
+                    return new Pow2XCalculator();
                 case "negativx":
                     return new NegativXCalculator();
 

@@ -2,13 +2,13 @@
 
 namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Calculate cos
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class CosCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Calculate cos
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public double Calculate(double first)
         {
             return Math.Cos(first);

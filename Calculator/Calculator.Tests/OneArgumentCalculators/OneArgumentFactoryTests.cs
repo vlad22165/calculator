@@ -1,6 +1,5 @@
 ﻿using System;
 using Calculator.OneArgumentCalculators;
-using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -24,7 +23,7 @@ namespace Calculator.Tests.OneArgumentCalculators
         [TestCase("Abs", typeof(ModuleXCalculator))]
         [TestCase("negativx", typeof(NegativXCalculator))]
         [TestCase("pow10x", typeof(Pow10XCalculator))]
-        [TestCase("pow2x", typeof(Pow2xCalculator))]
+        [TestCase("pow2x", typeof(Pow2XCalculator))]
 
         public void CalculateTest(string name, Type type)
         {

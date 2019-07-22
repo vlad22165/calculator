@@ -1,6 +1,5 @@
 ﻿using System;
 using Calculator.OneArgumentCalculators;
-using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -15,8 +14,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new ArccosCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new ArccosCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }
@@ -25,10 +24,10 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         public void ArccosTest()
         {
-            IOneArgumentCalculator Calculator = new ArccosCalculator();
+            IOneArgumentCalculator calculator = new ArccosCalculator();
 
             Assert.Throws<Exception>(() =>
-                Calculator.Calculate(2));
+                calculator.Calculate(2));
 
 
         }

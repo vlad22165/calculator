@@ -1,5 +1,4 @@
-﻿using System.Net.Mail;
-using Calculator.OneArgumentCalculators;
+﻿using Calculator.OneArgumentCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -12,11 +11,9 @@ namespace Calculator.Tests.OneArgumentCalculators
         [TestCase(4, 4)]
         [TestCase(8, 8)]
         public void CalculateTest(double firstValue, double expected)
-
         {
-
-            var Calculator = new ModuleXCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new ModuleXCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
         }
 

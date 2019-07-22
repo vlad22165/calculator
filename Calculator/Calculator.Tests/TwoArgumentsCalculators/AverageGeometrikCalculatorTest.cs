@@ -13,8 +13,8 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
         {
 
-            var Calculator = new AverageGeometrikCalculator();
-            var result = Calculator.Calculate(firstValue, secondValue);
+            var calculator = new AverageGeometrikCalculator();
+            var result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }

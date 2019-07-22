@@ -1,15 +1,15 @@
 ﻿using System;
-using Calculator.OneArgumentCalculators;
 
 namespace Calculator.TwoArgumentsCalculators
 {
-    /// <summary>
-    /// Calculate Максимальное значение
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class MinCalculator : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// Calculate Min value
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public double Calculate(double first, double second)
         {
             return Math.Min(first, second);

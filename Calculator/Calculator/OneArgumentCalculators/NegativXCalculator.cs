@@ -1,14 +1,12 @@
-﻿using System;
-
-namespace Calculator.OneArgumentCalculators
+﻿namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Calculate NegativX
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class NegativXCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Calculate NegativX
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public double Calculate(double first)
         {
             return -first;

@@ -15,7 +15,7 @@ namespace Calculator.OneArgumentCalculators
             {
                 throw new Exception("Нельзя делить на ноль");
             }
-            return 1/(first);
+            return 1 / (first);
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            IOneArgumentCalculator Calculator = new CosCalculator();
-            double result = Calculator.Calculate(1);
+            IOneArgumentCalculator calculator = new CosCalculator();
+            double result = calculator.Calculate(1);
 
             Assert.AreEqual(0.5403, result, 0.0001);
 

@@ -12,8 +12,8 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
         {
 
-            ITwoArgumentsCalculator Calculator = new SubtractionCalculator();
-            double result = Calculator.Calculate(1, 2);
+            ITwoArgumentsCalculator calculator = new SubtractionCalculator();
+            double result = calculator.Calculate(1, 2);
 
             Assert.AreEqual(-1, result);
 

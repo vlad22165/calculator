@@ -12,8 +12,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            IOneArgumentCalculator Calculator = new TanCalculator();
-            double result = Calculator.Calculate(1);
+            IOneArgumentCalculator calculator = new TanCalculator();
+            double result = calculator.Calculate(1);
 
             Assert.AreEqual(0.7853, result, 0.0001);
 

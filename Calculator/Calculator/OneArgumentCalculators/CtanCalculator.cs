@@ -2,16 +2,17 @@
 
 namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Calculate ctan
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
+
     public class CtanCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Calculate ctan
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public double Calculate(double first)
         {
-            return 1/Math.Tan(first);
+            return 1 / Math.Tan(first);
         }
     }
 }

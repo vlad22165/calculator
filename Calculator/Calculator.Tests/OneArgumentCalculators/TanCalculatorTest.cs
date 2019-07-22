@@ -1,5 +1,4 @@
 ﻿using Calculator.OneArgumentCalculators;
-using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
@@ -14,8 +13,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new TanCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new TanCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }

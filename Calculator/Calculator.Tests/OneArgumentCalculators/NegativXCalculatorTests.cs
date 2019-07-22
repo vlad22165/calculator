@@ -13,8 +13,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            IOneArgumentCalculator Calculator = new NegativXCalculator();
-            var result = Calculator.Calculate(firstValue);
+            IOneArgumentCalculator calculator = new NegativXCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }

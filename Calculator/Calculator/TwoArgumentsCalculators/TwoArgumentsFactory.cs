@@ -2,13 +2,12 @@
 
 namespace Calculator.TwoArgumentsCalculators
 {
-    /// <summary>
-    /// Two Argument Factory
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public static class TwoArgumentsFactory
     {
+        /// <summary>
+        /// Two Arguments Factory
+        /// </summary>
+        /// <returns></returns>
         public static ITwoArgumentsCalculator CreateCalculator(string operation)
         {
             switch (operation)

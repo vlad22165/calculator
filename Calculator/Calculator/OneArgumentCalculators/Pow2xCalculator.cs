@@ -2,16 +2,16 @@
 
 namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Calculate Pow2X
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
-    public class Pow2xCalculator : IOneArgumentCalculator
+    public class Pow2XCalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Calculate Pow2X
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public double Calculate(double first)
         {
-            return Math.Pow(2,first);
+            return Math.Pow(2, first);
         }
     }
 }

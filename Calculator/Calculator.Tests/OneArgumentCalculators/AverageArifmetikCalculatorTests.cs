@@ -1,5 +1,4 @@
-﻿using Calculator.OneArgumentCalculators;
-using Calculator.TwoArgumentsCalculators;
+﻿using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 
 namespace Calculator.Tests.TwoArgumentsCalculators
@@ -14,8 +13,8 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
         {
 
-            var Calculator = new AverageArifmetikCalculator();
-            var result = Calculator.Calculate(firstValue, secondValue);
+            var calculator = new AverageArifmetikCalculator();
+            var result = calculator.Calculate(firstValue, secondValue);
             Assert.AreEqual(expected, result);
 
         }

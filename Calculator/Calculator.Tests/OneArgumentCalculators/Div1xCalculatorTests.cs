@@ -5,7 +5,7 @@ using NUnit.Framework;
 namespace Calculator.Tests.OneArgumentCalculators
 {
     [TestFixture]
-    public class Div1xCalculatorTests
+    public class Div1XCalculatorTests
     {
         [TestCase(1, 1)]
         [TestCase(4, 0.25)]
@@ -14,20 +14,20 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new Div1XCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new Div1XCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }
 
         [Test]
 
-        public void Div1xTest()
+        public void Div1XTest()
         {
-            IOneArgumentCalculator Calculator = new Div1XCalculator();
+            IOneArgumentCalculator calculator = new Div1XCalculator();
 
             Assert.Throws<Exception>(() =>
-                Calculator.Calculate(0));
+                calculator.Calculate(0));
 
 
         }

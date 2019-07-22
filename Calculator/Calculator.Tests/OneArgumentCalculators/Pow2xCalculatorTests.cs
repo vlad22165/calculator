@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace Calculator.Tests.OneArgumentCalculators
 {
-    public class Pow2xCalculatorTests
+    public class Pow2XCalculatorTests
     {
 
 
@@ -12,8 +12,8 @@ namespace Calculator.Tests.OneArgumentCalculators
         [TestCase(8, 256)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var Calculator = new Pow2xCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new Pow2XCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
     }

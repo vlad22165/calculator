@@ -2,13 +2,14 @@
 
 namespace Calculator.TwoArgumentsCalculators
 {
-    /// <summary>
-    /// Calculate Деление и деление на ноль
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class DivisionCalculator : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// Calculate Division
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public double Calculate(double first, double second)
         {
             if (second == 0)

@@ -2,16 +2,16 @@
 
 namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Calculate E
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class ECalculator : IOneArgumentCalculator
     {
+        /// <summary>
+        /// Calculate E
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         public double Calculate(double first)
         {
-            return Math.Pow(Math.E,first);
+            return Math.Pow(Math.E, first);
         }
     }
 }

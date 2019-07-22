@@ -12,8 +12,8 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
         {
 
-            ITwoArgumentsCalculator Calculator = new AverageGeometrikCalculator();
-            double result = Calculator.Calculate(1, 2);
+            ITwoArgumentsCalculator calculator = new AverageGeometrikCalculator();
+            double result = calculator.Calculate(1, 2);
 
             Assert.AreEqual(1.4142, result, 0.0001);
 

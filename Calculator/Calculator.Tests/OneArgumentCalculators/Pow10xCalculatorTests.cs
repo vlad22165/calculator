@@ -4,7 +4,7 @@ using NUnit.Framework;
 namespace Calculator.Tests.OneArgumentCalculators
 {
     [TestFixture]
-    public class Pow10xCalculatorTests
+    public class Pow10XCalculatorTests
     {
 
 
@@ -13,8 +13,8 @@ namespace Calculator.Tests.OneArgumentCalculators
         [TestCase(8, 1073741824)]
         public void CalculateTest(double firstValue, double expected)
         {
-            var Calculator = new Pow10XCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new Pow10XCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result);
         }
     }

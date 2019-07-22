@@ -1,5 +1,4 @@
 ﻿using System;
-using Calculator.OneArgumentCalculators;
 using Calculator.TwoArgumentsCalculators;
 using NUnit.Framework;
 

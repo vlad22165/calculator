@@ -1,12 +1,13 @@
 ﻿namespace Calculator.TwoArgumentsCalculators
 {
-    /// <summary>
-    /// Calculate Add(Cложение)
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class AddCalculator : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// Calculate Add
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public double Calculate(double first, double second)
         {
             return first + second;

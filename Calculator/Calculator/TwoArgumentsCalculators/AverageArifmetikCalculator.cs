@@ -1,17 +1,16 @@
-﻿using System;
-
-namespace Calculator.TwoArgumentsCalculators
+﻿namespace Calculator.TwoArgumentsCalculators
 {
-    /// <summary>
-    /// Calculate средне-арифметическое
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public class AverageArifmetikCalculator : ITwoArgumentsCalculator
     {
+        /// <summary>
+        /// Calculate Average Arifmetik
+        /// </summary>
+        /// <param name="first"></param>
+        /// <param name="second"></param>
+        /// <returns></returns>
         public double Calculate(double first, double second)
         {
-            return first+second/2;
+            return first + second / 2;
         }
     }
 }

@@ -12,8 +12,8 @@ namespace Calculator.Tests.TwoArgumentsCalculators
 
             {
 
-                ITwoArgumentsCalculator Calculator = new AverageArifmetikCalculator();
-                double result = Calculator.Calculate(1, 2);
+                ITwoArgumentsCalculator calculator = new AverageArifmetikCalculator();
+                double result = calculator.Calculate(1, 2);
 
                 Assert.AreEqual(2, result);
 

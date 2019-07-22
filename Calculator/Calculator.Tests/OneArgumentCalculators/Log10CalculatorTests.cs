@@ -14,8 +14,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new Log10Calculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new Log10Calculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }

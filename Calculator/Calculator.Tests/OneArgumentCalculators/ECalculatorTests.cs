@@ -13,8 +13,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new ECalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new ECalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }

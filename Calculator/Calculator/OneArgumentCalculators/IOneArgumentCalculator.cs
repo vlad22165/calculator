@@ -1,12 +1,12 @@
 ﻿namespace Calculator.OneArgumentCalculators
 {
-    /// <summary>
-    /// Interface
-    /// </summary>
-    /// <param name="first"></param>
-    /// <returns></returns>
     public interface IOneArgumentCalculator
     {
+        /// <summary>
+        /// Interface
+        /// </summary>
+        /// <param name="first"></param>
+        /// <returns></returns>
         double Calculate(double first);
     }
 }

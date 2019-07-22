@@ -14,8 +14,8 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         {
 
-            var Calculator = new ArcsinCalculator();
-            var result = Calculator.Calculate(firstValue);
+            var calculator = new ArcsinCalculator();
+            var result = calculator.Calculate(firstValue);
             Assert.AreEqual(expected, result, 0.0001);
 
         }
@@ -24,10 +24,10 @@ namespace Calculator.Tests.OneArgumentCalculators
 
         public void ArcSinTest()
         {
-            IOneArgumentCalculator Calculator = new ArcsinCalculator();
+            IOneArgumentCalculator calculator = new ArcsinCalculator();
 
             Assert.Throws<Exception>(() =>
-                Calculator.Calculate(2));
+                calculator.Calculate(2));
 
 
         }
