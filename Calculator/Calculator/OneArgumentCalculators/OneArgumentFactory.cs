@@ -3,6 +3,10 @@ using Calculator.TwoArgumentsCalculators;
 
 namespace Calculator.OneArgumentCalculators
 {
+    /// <summary>
+    /// One argument Factory
+    /// </summary>
+    /// <returns></returns>
     public static class OneArgumentFactory
     {
         public static IOneArgumentCalculator CreateCalculator(string operation)

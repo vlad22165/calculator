@@ -60,7 +60,6 @@
     <Compile Include="OneArgumentCalculators\LnCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\Log10CalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\Log2CalculatorTests.cs" />
-    <Compile Include="OneArgumentCalculators\MaxCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\ModuleXCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\NegativXCalculatorTests.cs" />
     <Compile Include="OneArgumentCalculators\OneArgumentFactoryTests.cs" />

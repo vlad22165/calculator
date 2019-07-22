@@ -13,6 +13,11 @@ using Calculator.TwoArgumentsCalculators;
 
 namespace Calculator
 {
+    /// <summary>
+    /// Главный код калькулятора
+    /// </summary>
+    /// <param name="first"></param>
+    /// <returns></returns>
     public partial class Form1 : Form
     {
         public Form1()

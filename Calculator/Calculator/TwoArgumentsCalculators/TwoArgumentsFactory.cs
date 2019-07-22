@@ -2,6 +2,11 @@
 
 namespace Calculator.TwoArgumentsCalculators
 {
+    /// <summary>
+    /// Two Argument Factory
+    /// </summary>
+    /// <param name="first"></param>
+    /// <returns></returns>
     public static class TwoArgumentsFactory
     {
         public static ITwoArgumentsCalculator CreateCalculator(string operation)
