@@ -4,12 +4,13 @@ namespace Calculator.OneArgumentCalculators
 {
     public static class OneArgumentFactory
     {
+        /// <summary>
+        /// One argument Factory
+        /// </summary>
+        /// <returns></returns>
         public static IOneArgumentCalculator CreateCalculator(string operation)
         {
-            /// <summary>
-            /// One argument Factory
-            /// </summary>
-            /// <returns></returns>
+            
             switch (operation)
             {
                 case "Cos":
