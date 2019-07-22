@@ -12,30 +12,21 @@ namespace Calculator.Tests.TwoArgumentsCalculators
         public void CalculateTest()
 
         {
-
             ITwoArgumentsCalculator calculator = new DivisionCalculator();
             double result = calculator.Calculate(1, 2);
 
             Assert.AreEqual(0.5, result);
-
         }
 
         [Test]
 
         public void DivisionByZeroTest()
-
         {
-
             ITwoArgumentsCalculator calculator = new DivisionCalculator();
-            double result = calculator.Calculate(1, 2);
-
             Assert.Throws<Exception>(() =>
                 calculator.Calculate(1, 0));
 
 
         }
-
-
     }
-
 }
